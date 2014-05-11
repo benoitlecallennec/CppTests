@@ -1,0 +1,7 @@
+project(CppTestsProject)
+
+add_executable(001_ExplicitKeyword 001_ExplicitKeyword.cpp)
+add_executable(002_NullPointerDereferencing 002_NullPointerDereferencing.cpp)
+add_executable(003_NonConstStaticMemberInClassInitialization 003_NonConstStaticMemberInClassInitialization.cpp)
+add_executable(004_VariableAutoInitialization 004_VariableAutoInitialization.cpp)
+add_executable(005_ArrayAutoInitialization 005_ArrayAutoInitialization.cpp)
