@@ -1,6 +1,7 @@
 #include <iostream>
 #include <vector>
 
+//! [005]
 const int x = 10;
 const int y = 10;
 
@@ -18,8 +19,6 @@ int main()
   std::vector<double> y2(10);
   std::cout << y2.size() << std::endl;
 
-  char c;
-  std::cin >> c;
-
   return 0;
 }
+//! [005]

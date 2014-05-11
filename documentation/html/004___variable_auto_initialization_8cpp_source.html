@@ -70,7 +70,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -86,20 +86,20 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="contents">
 <a href="004___variable_auto_initialization_8cpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#include &lt;iostream&gt;</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;</div>
-<div class="line"><a name="l00003"></a><span class="lineno"><a class="code" href="004___variable_auto_initialization_8cpp.html#a6150e0515f7202e2fb518f7206ed97dc">    3</a></span>&#160;<span class="keywordtype">int</span> <a class="code" href="004___variable_auto_initialization_8cpp.html#a6150e0515f7202e2fb518f7206ed97dc">x</a> = 99;</div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;</div>
-<div class="line"><a name="l00005"></a><span class="lineno"><a class="code" href="004___variable_auto_initialization_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4">    5</a></span>&#160;<span class="keywordtype">int</span> <a class="code" href="001___explicit_keyword_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4">main</a>()</div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;{</div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;  <span class="keywordtype">int</span> <a class="code" href="004___variable_auto_initialization_8cpp.html#a6150e0515f7202e2fb518f7206ed97dc">x</a> = <a class="code" href="004___variable_auto_initialization_8cpp.html#a6150e0515f7202e2fb518f7206ed97dc">x</a>;</div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;</div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;  <span class="comment">// Undefined behavior: x is initialized with itself</span></div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;  std::cout &lt;&lt; x &lt;&lt; std::endl;</div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;  <span class="keywordflow">return</span> 0;</div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;}</div>
+<div class="line"><a name="l00004"></a><span class="lineno"><a class="code" href="004___variable_auto_initialization_8cpp.html#a6150e0515f7202e2fb518f7206ed97dc">    4</a></span>&#160;<span class="keywordtype">int</span> <a class="code" href="004___variable_auto_initialization_8cpp.html#a6150e0515f7202e2fb518f7206ed97dc" title="[004]">x</a> = 99;</div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;</div>
+<div class="line"><a name="l00006"></a><span class="lineno"><a class="code" href="004___variable_auto_initialization_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4">    6</a></span>&#160;<span class="keywordtype">int</span> <a class="code" href="001___explicit_keyword_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4">main</a>()</div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;{</div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;  <span class="comment">// Undefined behavior: x is initialized with itself</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;  <span class="keywordtype">int</span> <a class="code" href="004___variable_auto_initialization_8cpp.html#a6150e0515f7202e2fb518f7206ed97dc" title="[004]">x</a> = <a class="code" href="004___variable_auto_initialization_8cpp.html#a6150e0515f7202e2fb518f7206ed97dc" title="[004]">x</a>;</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;  std::cout &lt;&lt; x &lt;&lt; std::endl;</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;  <span class="keywordflow">return</span> 0;</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;}</div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun May 11 2014 18:19:04 for CppTests by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun May 11 2014 19:55:35 for CppTests by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.3.1
 </small></address>

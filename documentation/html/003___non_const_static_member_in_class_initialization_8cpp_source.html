@@ -70,7 +70,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -86,40 +86,27 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="contents">
 <a href="003___non_const_static_member_in_class_initialization_8cpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#include &lt;iostream&gt;</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;</div>
-<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="keyword">class </span><a class="code" href="class_a.html">A</a></div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;{</div>
-<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="keyword">protected</span>:</div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;  <span class="keywordtype">int</span> <a class="code" href="class_a.html#a4234f7f8855460d3d0bbde563f6c4d1b">m_int</a>;</div>
+<div class="line"><a name="l00004"></a><span class="lineno"><a class="code" href="struct_my_struct.html">    4</a></span>&#160;<span class="keyword">struct </span><a class="code" href="struct_my_struct.html" title="[003]">MyStruct</a></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;{</div>
+<div class="line"><a name="l00006"></a><span class="lineno"><a class="code" href="struct_my_struct.html#adca6f6b71cdbb376d20e2268d4a6a68a">    6</a></span>&#160;  <span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">int</span> <a class="code" href="struct_my_struct.html#adca6f6b71cdbb376d20e2268d4a6a68a">constOk</a> = 1;</div>
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;</div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00009"></a><span class="lineno"><a class="code" href="class_a.html#a4142862ec27f2f3d8deb026d51a5c5a0">    9</a></span>&#160;  <a class="code" href="class_a.html#a4142862ec27f2f3d8deb026d51a5c5a0">A</a>() :<a class="code" href="class_a.html#a4234f7f8855460d3d0bbde563f6c4d1b">m_int</a>(9)</div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;  {</div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;  }</div>
-<div class="line"><a name="l00012"></a><span class="lineno"><a class="code" href="class_a.html#a339ab0a17662ec9e866c43112bc38ffb">   12</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="class_a.html#a339ab0a17662ec9e866c43112bc38ffb">foo</a>()</div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;  {</div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    std::cout &lt;&lt; <span class="stringliteral">&quot;foo&quot;</span> &lt;&lt; std::endl;</div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;  }</div>
-<div class="line"><a name="l00016"></a><span class="lineno"><a class="code" href="class_a.html#aaf40e82365da5a570a55048d692d48d3">   16</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="class_a.html#aaf40e82365da5a570a55048d692d48d3">bar</a>()</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;  {</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    std::cout &lt;&lt; <span class="stringliteral">&quot;bar &quot;</span> &lt;&lt; <a class="code" href="class_a.html#a4234f7f8855460d3d0bbde563f6c4d1b">m_int</a> &lt;&lt; std::endl;</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;  }</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;};</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;</div>
-<div class="line"><a name="l00022"></a><span class="lineno"><a class="code" href="003___non_const_static_member_in_class_initialization_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4">   22</a></span>&#160;<span class="keywordtype">int</span> <a class="code" href="001___explicit_keyword_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4">main</a>()</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;{</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;  <a class="code" href="class_a.html">A</a> *a = <span class="keyword">nullptr</span>;</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;  <span class="comment">// Dereferencing null pointer is an undefined behavior</span></div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;  a-&gt;<a class="code" href="class_a.html#a339ab0a17662ec9e866c43112bc38ffb">foo</a>(); <span class="comment">// &lt;&lt;== UB, but still &quot;works&quot;</span></div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;  a-&gt;<a class="code" href="class_a.html#aaf40e82365da5a570a55048d692d48d3">bar</a>(); <span class="comment">// &lt;&lt;== runtime error</span></div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;  <span class="keywordflow">return</span> 0;</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;}</div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;  <span class="comment">// ISO C++ forbids in-class initialization of non-const static member</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;  <span class="comment">// static int notOk = 2; // &lt;&lt;== ERROR</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno"><a class="code" href="struct_my_struct.html#ade65a1dbfb165a1e955735b2cba8e604">   10</a></span>&#160;  <span class="keyword">static</span> <span class="keywordtype">int</span> <a class="code" href="struct_my_struct.html#ade65a1dbfb165a1e955735b2cba8e604">ok</a>;</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;};</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="keywordtype">int</span> <a class="code" href="struct_my_struct.html#ade65a1dbfb165a1e955735b2cba8e604">MyStruct::ok</a> = 2;</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;</div>
+<div class="line"><a name="l00015"></a><span class="lineno"><a class="code" href="003___non_const_static_member_in_class_initialization_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4">   15</a></span>&#160;<span class="keywordtype">int</span> <a class="code" href="001___explicit_keyword_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4">main</a>()</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;{</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;  std::cout &lt;&lt; <a class="code" href="struct_my_struct.html#adca6f6b71cdbb376d20e2268d4a6a68a">MyStruct::constOk</a> &lt;&lt; std::endl;</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;  std::cout &lt;&lt; <a class="code" href="struct_my_struct.html#ade65a1dbfb165a1e955735b2cba8e604">MyStruct::ok</a> &lt;&lt; std::endl;</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;  <span class="keywordflow">return</span> 0;</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;}</div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun May 11 2014 18:19:04 for CppTests by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun May 11 2014 19:55:35 for CppTests by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.3.1
 </small></address>

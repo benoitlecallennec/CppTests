@@ -1,32 +1,21 @@
 #include <iostream>
 
-class A
+//! [003]
+struct MyStruct
 {
-protected:
-  int m_int;
+  static const int constOk = 1;
 
-public:
-  A() :m_int(9)
-  {
-  }
-  void foo()
-  {
-    std::cout << "foo" << std::endl;
-  }
-  void bar()
-  {
-    std::cout << "bar " << m_int << std::endl;
-  }
+  // ISO C++ forbids in-class initialization of non-const static member
+  // static int notOk = 2; // <<== ERROR
+  static int ok;
 };
+
+int MyStruct::ok = 2;
 
 int main()
 {
-  A *a = nullptr;
-
-  // Dereferencing null pointer is an undefined behavior
-  a->foo(); // <<== UB, but still "works"
-
-  a->bar(); // <<== runtime error
-
+  std::cout << MyStruct::constOk << std::endl;
+  std::cout << MyStruct::ok << std::endl;
   return 0;
 }
+//! [003]
