@@ -1,3 +1,4 @@
+//! [ExplicitKeyword ExplicitKeyword]
 class Real3
 {
 	double x, y ,z;
@@ -27,3 +28,4 @@ int main()
 
 	return 0;
 }
+//! [ExplicitKeyword ExplicitKeyword]

@@ -1,3 +1,4 @@
+//! [NullPointer NullPointer]
 #include <iostream>
 
 class A
@@ -30,3 +31,4 @@ int main()
 
   return 0;
 }
+//! [NullPointer NullPointer]
