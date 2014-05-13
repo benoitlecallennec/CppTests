@@ -7,7 +7,7 @@ protected:
   int m_int;
 
 public:
-  A() :m_int(9)
+  A() : m_int(9)
   {
   }
   void foo()
