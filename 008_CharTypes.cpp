@@ -11,14 +11,11 @@ int main()
 
   // Just print to see whether char is signed or unsigned.
   // Use int to see something.
-
-  // Default MSVC2013 compiler behavior:
-  // Prints -1 255 -1 => so char is signed char
-  // Adding /J flag force unsigned char by default for char:
-  // Prints -1 255 255 => so now char is indeed unsigned char
   std::cout << int(sc) << " " << int(uc) << " " << int(c) << std::endl;
-
-  std::cout << '\7' << std::endl;
+  // Default MSVC2013 compiler behavior:
+  // Prints -1 255 -1 => so char is signed char by default
+  // Adding /J flag force unsigned char by default for char:
+  // Prints -1 255 255 => so now char is unsigned char as expected
 
   return 0;
 }
